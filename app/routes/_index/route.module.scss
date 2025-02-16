@@ -1,0 +1,35 @@
+.heroBanner {
+    opacity: 0.95;
+}
+
+.featuredPosts {
+    align-items: center;
+}
+
+.outletWrapper {
+    position: relative;
+    overflow: hidden; /* To contain the MetaBalls */
+    z-index: 0;
+}
+
+.outletWrapper > div:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    z-index: -1;
+}
+
+.outletWrapper > *:not(:first-child) {
+    position: relative;
+    z-index: 1;
+}
+.header1 {
+}
+.div1 {
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.div2 {
+}

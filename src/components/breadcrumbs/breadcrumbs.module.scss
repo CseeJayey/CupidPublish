@@ -1,0 +1,12 @@
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font: var(--breadcrumbs);
+    color: var(--linkhref);
+}
+
+.separatorIcon {
+    width: 21px;
+    height: 21px;
+}

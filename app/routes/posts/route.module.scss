@@ -1,0 +1,138 @@
+.postItem {
+    background: var(--primary3);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease;
+    height: 45em;
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+.postItem h2 {
+    margin: 0;
+    color: #333;
+    text-decoration: none;
+}
+
+.postItem p {
+    color: #777;
+    font-size: 0.9em;
+}
+
+.heroImage {
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    background-color: white;
+    height: 100%; /* Ensure the container takes the full height */
+}
+
+.heroImageImg {
+    object-fit: cover;
+    width: 100%;
+    height: 30%;
+}
+
+.heroImageContentBox {
+    height: 70%; /* The other half of the container */
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.heroImageTitle {
+    font-size: 2.5em;
+    text-wrap: pretty;
+    // text-align: center;
+    // @media (max-width: 1024px) {
+    //     font-size: 1.5em;
+    // }
+
+    // @media (max-width: 600px) {
+    //     font-size: 1em;
+    // }
+}
+
+.postMeta {
+    border-bottom: 2px solid #808080;
+    padding-bottom: 20px;
+}
+
+.heroImageDescription {
+    font-size: 1em;
+    text-wrap: pretty;
+}
+
+.heroImageExploreButton {
+    padding: 16px 24px;
+    background-color: black;
+    border-radius: 28px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+    align-self: flex-start;
+    color: white;
+    @media (width <= 1024px) {
+        font-size: 16px;
+    }
+}
+
+.heroImageExploreButton:hover {
+    background-color: #848484;
+}
+
+.page {
+    padding: 20px;
+    max-width: 90%;
+    min-width: 30%;
+    margin: 0 auto;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.searchInput {
+    flex: 2;
+    padding: 5px;
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.authorSelect {
+    flex: 1;
+    padding: 5px;
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.postList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+
+    @media (max-width: 1280px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+

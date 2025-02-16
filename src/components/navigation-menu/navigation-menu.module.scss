@@ -1,0 +1,29 @@
+.menuList {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menuList.vertical {
+    flex-direction: column;
+}
+
+.menuItem {
+    display: block;
+    padding: 14px 18px;
+    white-space: nowrap;
+    margin-right:10px;
+    font-weight: bold;
+}
+
+.menuItem:hover,
+.menuItem.active {
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--primary1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
