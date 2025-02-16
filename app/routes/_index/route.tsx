@@ -93,7 +93,7 @@ export default function HomePage() {
                                 <br /> Phản hồi của bạn giúp chúng mình cải thiện!
                             </div>
                         </div>
-                        <NavLink to="#">
+                        <NavLink to="https://forms.gle/mmNkzubV2cXfz2Rc6">
                             <LabelWithArrow>Chia sẻ ý kiến của bạn tại đây.</LabelWithArrow>
                         </NavLink>
                     </div>
