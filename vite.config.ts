@@ -18,6 +18,9 @@ export default defineConfig({
         netlifyPlugin(),
         tsconfigPaths(),
     ],
+    ssr: {
+        noExternal: ['primereact'],
+    },
     resolve: {
         alias: { '~': __dirname },
     },
