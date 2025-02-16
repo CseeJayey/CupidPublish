@@ -90,7 +90,13 @@ const ResultComponent: React.FC<ResultComponentProps> = ({ score, maxScore, rese
                     </button>
                 </div>
             </NavLink>
-
+            <a href="https://forms.gle/mmNkzubV2cXfz2Rc6" target="_blank" rel="noopener noreferrer">
+                <div>
+                    <button className="feedback-button">
+                        <LabelWithArrow>Chia sẻ ý kiến của bạn tại đây</LabelWithArrow>
+                    </button>
+                </div>
+            </a>
             <button onClick={resetQuiz} className="reset-button">
                 Thử lại
             </button>

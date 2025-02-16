@@ -93,9 +93,13 @@ export default function HomePage() {
                                 <br /> Phản hồi của bạn giúp chúng mình cải thiện!
                             </div>
                         </div>
-                        <NavLink to="https://forms.gle/mmNkzubV2cXfz2Rc6">
+                        <a 
+                            href="https://forms.gle/mmNkzubV2cXfz2Rc6" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
                             <LabelWithArrow>Chia sẻ ý kiến của bạn tại đây.</LabelWithArrow>
-                        </NavLink>
+                        </a>
                     </div>
                 </FloatIn>
             </BackgroundParallax>
