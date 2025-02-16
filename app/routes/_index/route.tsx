@@ -5,6 +5,7 @@ import styles from './route.module.scss';
 import classNames from 'classnames';
 import MetaBalls from '~/src/components/metaballs/MetaBalls';
 import { FeaturedPostsSection } from '~/src/components/featured-posts-section/featured-posts-section';
+import { CONFIG } from '~/src/data/configData';
 
 export default function HomePage() {
     return (
@@ -94,7 +95,7 @@ export default function HomePage() {
                             </div>
                         </div>
                         <a 
-                            href="https://forms.gle/mmNkzubV2cXfz2Rc6" 
+                            href={CONFIG.FEEDBACK_FORM}
                             target="_blank" 
                             rel="noopener noreferrer"
                         >

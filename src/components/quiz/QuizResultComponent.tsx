@@ -3,6 +3,7 @@ import useWindowSize from "react-use/lib/useWindowSize";
 import Confetti from 'react-confetti'
 import { NavLink } from '@remix-run/react';
 import { LabelWithArrow } from '../label-with-arrow/label-with-arrow';
+import { CONFIG } from '~/src/data/configData';
 
 interface ResultComponentProps {
     score: number;
@@ -48,7 +49,7 @@ const ResultComponent: React.FC<ResultComponentProps> = ({ score, maxScore, rese
             <h3>
                 Your Score: {score} ({percentage}%)
             </h3>
-            {percentage >= 70 && (
+            {percentage >= CONFIG.RESULT_HIGH && (
                 <div>
                     {getConfetti(width, height)}
                     <p className="resultTitle">Bạn đã sẵn sàng để làm cha mẹ!</p>
@@ -60,7 +61,7 @@ const ResultComponent: React.FC<ResultComponentProps> = ({ score, maxScore, rese
                 </div>
             )}
 
-            {percentage < 70 && percentage >= 50 && (
+            {percentage < CONFIG.RESULT_HIGH && percentage >= CONFIG.RESULT_MEDIUM && (
                 <div>
                     <p className="resultTitle">
                         Bạn gần đạt được mục tiêu, chỉ cần chuẩn bị thêm một chút nữa!
@@ -73,7 +74,7 @@ const ResultComponent: React.FC<ResultComponentProps> = ({ score, maxScore, rese
                 </div>
             )}
 
-            {percentage < 50 && (
+            {percentage < CONFIG.RESULT_LOW && (
                 <div>
                     <p className="resultTitle">Có thể bạn cần suy nghĩ thêm về quyết định này.</p>
                     <p className="resultFlair">
@@ -90,7 +91,7 @@ const ResultComponent: React.FC<ResultComponentProps> = ({ score, maxScore, rese
                     </button>
                 </div>
             </NavLink>
-            <a href="https://forms.gle/mmNkzubV2cXfz2Rc6" target="_blank" rel="noopener noreferrer">
+            <a href={CONFIG.FEEDBACK_FORM} target="_blank" rel="noopener noreferrer">
                 <div>
                     <button className="feedback-button">
                         <LabelWithArrow>Chia sẻ ý kiến của bạn tại đây</LabelWithArrow>
