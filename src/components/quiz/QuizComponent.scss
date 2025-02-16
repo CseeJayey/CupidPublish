@@ -66,6 +66,22 @@
     color: #333;
 }
 
+.post-button {
+    background: #1170d6;
+    color: white;
+    border: none;
+    padding: 0.3em 3em;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: x-large;
+    cursor: pointer;
+    transition: background 0.3s;
+    font: var(--heading6);
+}
+.post-button:hover {
+    background: #0056b3;
+}
+
 .feedback-button {
     background: #5611d6;
     color: white;
@@ -80,22 +96,6 @@
 }
 .feedback-button:hover {
     background: #7400b3;
-}
-
-.feedback-button {
-    background: #11d63c;
-    color: white;
-    border: none;
-    padding: 0.3em 3em;
-    margin-top: 20px;
-    border-radius: 5px;
-    font-size: x-large;
-    cursor: pointer;
-    transition: background 0.3s;
-    font: var(--heading6);
-}
-.feedback-button:hover {
-    background: #09b300;
 }
 
 .reset-button {
