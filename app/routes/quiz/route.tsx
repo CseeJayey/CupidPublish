@@ -15,7 +15,7 @@ export default function QuizPage() {
                     <img src="/images/hero2.jpg" alt="" />
                 </MouseParallaxChild>
             </MouseParallaxContainer> */}
-            <div>
+            <div className={styles.quizComponent}>
                 <h1 className={styles.header1}>Bạn đã sẵn sàng trong hôn nhân chưa?</h1>
                 <QuizComponent />
             </div>

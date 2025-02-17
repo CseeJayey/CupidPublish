@@ -1,7 +1,8 @@
 .root {
     margin: 0 calc(-1 * var(--pagePaddingHoriz));
     padding: 75px var(--pagePaddingHoriz);
-    padding: 100px;
+    padding-left: 3em;
+    padding-right: 3em;
 }
 
 .header {
@@ -31,6 +32,9 @@
     grid-auto-flow: column;
     gap: 20px;
     justify-content: center;
+    @media (max-width: 600px) {
+        grid-auto-flow: row;
+    }
 }
 
 .postLink {
@@ -66,7 +70,6 @@
 }
 
 .postTitle {
-    font-size: 2rem;
     color: #333;
     margin: 0;
 }

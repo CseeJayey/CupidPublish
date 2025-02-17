@@ -25,11 +25,19 @@
     position: relative;
     z-index: 1;
 }
-.header1 {
-}
-.div1 {
+.floatingCardHelper {
+    display: flex;
+    align-items: start;
     flex-direction: column;
-    flex-wrap: nowrap;
 }
-.div2 {
+.floatingCardHelper a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.floatingCardHelper span {
+    display: inline;
 }

@@ -82,7 +82,7 @@ const QuizComponent: React.FC = () => {
                             className="question-card"
                         >
                             {/* Question Counter */}
-                            <p className="question-counter QuizComponent_p1">
+                            <p className="question-counter">
                                 Câu hỏi {currentQuestion + 1} trên {quizData.length}
                             </p>
 

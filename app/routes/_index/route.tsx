@@ -6,6 +6,7 @@ import classNames from 'classnames';
 import MetaBalls from '~/src/components/metaballs/MetaBalls';
 import { FeaturedPostsSection } from '~/src/components/featured-posts-section/featured-posts-section';
 import { CONFIG } from '~/src/data/configData';
+import { FiExternalLink } from 'react-icons/fi';
 
 export default function HomePage() {
     return (
@@ -24,7 +25,7 @@ export default function HomePage() {
                 />
             </div>
             <div className={classNames('heroBanner', styles.heroBanner)}>
-                <img src="/images/hero1.jpg" className="heroBannerImage" alt="" />
+                <img src="/images/hero3.jpg" className="heroBannerImage" alt="" />
                 <div className="heroBannerOverlay">
                     <div className="heroBannerSubtitle">BanhNgot Group Presents</div>
                     <h1 className="heroBannerTitle">Quiz4Love</h1>
@@ -34,7 +35,9 @@ export default function HomePage() {
             <div className="textBannerSection outlinedText">
                 <NavLink to="/quiz">
                     <FadeIn className="textBanner" duration={1.8}>
-                        <div className="textBannerSubtitle">Bạn đã sẵn sàng trong hôn nhân chưa?</div>
+                        <div className="textBannerSubtitle">
+                            Bạn đã sẵn sàng trong hôn nhân chưa?
+                        </div>
                         <div className="textBannerTitle">Làm Bài Kiểm Tra Ngay!</div>
                         <LabelWithArrow>Kết Quả Ngay Lập Tức</LabelWithArrow>
                     </FadeIn>
@@ -78,14 +81,14 @@ export default function HomePage() {
 
             <BackgroundParallax
                 className="floatingCardBackground"
-                backgroundImageUrl="/images/hero2.jpg"
+                backgroundImageUrl="/images/hero4.jpg"
                 parallaxStrength={0.75}
             >
                 <FloatIn direction="up" duration={1.2} distance={120}>
-                    <div className={classNames('floatingCard', styles.div2)}>
+                    <div className={classNames('floatingCard')}>
                         <div className="floatingCardHeader">Feedback</div>
-                        <div className={classNames('floatingCardContent', styles.div1)}>
-                            <h2 className={classNames('floatingCardTitle', styles.header1)}>
+                        <div className={classNames('floatingCardContent')}>
+                            <h2 className={classNames('floatingCardTitle')}>
                                 Bạn đã làm quiz chưa?
                             </h2>
                             <div className="floatingCardDescription">
@@ -94,13 +97,16 @@ export default function HomePage() {
                                 <br /> Phản hồi của bạn giúp chúng mình cải thiện!
                             </div>
                         </div>
-                        <a 
-                            href={CONFIG.FEEDBACK_FORM}
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                        >
-                            <LabelWithArrow>Chia sẻ ý kiến của bạn tại đây.</LabelWithArrow>
-                        </a>
+
+                        <div className={styles.floatingCardHelper}>
+                            <a
+                                href={CONFIG.FEEDBACK_FORM}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <span>Chia sẻ ý kiến của bạn tại đây. </span> <FiExternalLink />
+                            </a>
+                        </div>
                     </div>
                 </FloatIn>
             </BackgroundParallax>
