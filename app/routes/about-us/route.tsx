@@ -37,7 +37,7 @@ export default function AboutUsPage() {
                 </Reveal>
 
                 <FadeIn duration={2}>
-                    <img className={styles.image} src="/images/about1.jpg" alt="" />
+                    <img className={styles.image} src="/images/hero2.jpg" alt="" />
                 </FadeIn>
 
                 <FadeIn duration={2}>
