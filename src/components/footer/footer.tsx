@@ -16,7 +16,7 @@ export const Footer = ({ className }: FooterProps) => {
 
     return (
         <footer className={classNames(styles.root, className)}>
-            <div className={styles.div2}>
+            <div className={styles.footerContainer}>
                 <FadeIn className={styles.navigation} duration={0.5}>
                     <nav>
                         <ul className={styles.navList}>
@@ -65,7 +65,6 @@ export const Footer = ({ className }: FooterProps) => {
                         <img
                             src="/q4l.svg"
                             alt=""
-                            className={classNames(styles.img1, styles.img1)}
                         />
                     </Link>
                 </FadeIn>

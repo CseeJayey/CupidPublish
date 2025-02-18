@@ -1,4 +1,4 @@
-import type { MetaFunction } from '@remix-run/react';
+import { type MetaFunction } from '@remix-run/react';
 import { FadeIn, Reveal } from '~/src/components/visual-effects';
 import styles from './route.module.scss';
 
@@ -57,6 +57,7 @@ export default function AboutUsPage() {
                     </div>
                 </Reveal>
             </div>
+            <div className={styles.pagebreak} />
             <FadeIn duration={1}>
                 <div className={styles.aboutUsSection}>
                     <h2 className={styles.aboutUsSectionTitle}>Nhóm Bánh Ngọt</h2>
@@ -123,6 +124,21 @@ export default function AboutUsPage() {
                     </div>
                 </div>
             </FadeIn>
+            <div className={styles.pagebreak} />
+
+            <div className={styles.technologiesContainer}>
+                <h1>Built With:</h1>
+                <div className={styles.technologiesLogos}>
+                    <a href="https://remix.run/" target="_blank" rel="noopener noreferrer">
+                        <img src="/logos/remix.svg" alt="" />
+                    </a>
+                    <a href="https://vite.dev/" target="_blank" rel="noopener noreferrer">
+                        <img src="/logos/vite.svg" alt="" />
+                    </a>
+                </div>
+            </div>
+
+            <footer></footer>
         </div>
     );
 }

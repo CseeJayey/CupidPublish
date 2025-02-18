@@ -8,11 +8,23 @@
     padding-bottom: 10vh;
 }
 
-.header1 {
+.quizHeader {
     text-align: center;
+    font-size: xx-large;
+    background: -webkit-linear-gradient(#c3b622, #fb3f61);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgba(212, 54, 59, 0.671)
+    
 }
 
 .foregroundContent {
     position: relative;
     z-index: 1; /* In front of the background */
+}
+@media (max-width: 800px) {
+    .quizHeader {
+        font-size: x-large;
+    }
 }

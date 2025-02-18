@@ -1,10 +1,13 @@
 import type { MetaFunction } from '@remix-run/react';
 import QuizComponent from '~/src/components/quiz/QuizComponent';
 import styles from './route.module.scss';
+import { useRef } from 'react';
+import VariableProximity from '~/src/components/variable-proximity/variable-proximity';
 // import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
 
 
 export default function QuizPage() {
+    const containerRef = useRef(null);
     return (
         <div className={styles.quizPage}>
             {/* <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
@@ -16,7 +19,16 @@ export default function QuizPage() {
                 </MouseParallaxChild>
             </MouseParallaxContainer> */}
             <div className={styles.quizComponent}>
-                <h1 className={styles.header1}>Bạn đã sẵn sàng trong hôn nhân chưa?</h1>
+                <div ref={containerRef} className={styles.quizHeader}>
+                    <VariableProximity
+                        label={'Bạn đã sẵn sàng trong hôn nhân chưa?'}
+                        fromFontVariationSettings="'wght' 600, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1200, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                    />
+                </div>
                 <QuizComponent />
             </div>
         </div>
