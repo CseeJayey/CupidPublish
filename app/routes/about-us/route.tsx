@@ -159,7 +159,7 @@ export default function AboutUsPage() {
 
 export const meta: MetaFunction = () => {
     return [
-        { title: 'About Quiz4Love' },
+        { title: 'About | Quiz4Love' },
         {
             name: 'description',
             content: 'About us',

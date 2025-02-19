@@ -37,7 +37,7 @@ export default function QuizPage() {
 
 export const meta: MetaFunction = () => {
     return [
-        { title: 'Parenthood Quiz' },
+        { title: 'Quiz | Quiz4Love' },
         {
             name: 'description',
             content: 'Take the quiz to find out if you are prepared for parenthood.',

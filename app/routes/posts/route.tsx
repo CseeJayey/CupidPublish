@@ -1,29 +1,35 @@
 import { LoaderFunctionArgs } from '@remix-run/node';
-import { useLoaderData, Link, useSearchParams } from '@remix-run/react';
+import { useLoaderData, Link, useSearchParams, MetaFunction } from '@remix-run/react';
 import { posts } from '~/src/data/postData';
 import styles from './route.module.scss';
 import classNames from 'classnames';
 import { getExcerpt } from '~/src/wix/utils/get-excerpt';
+import Fuse from 'fuse.js';
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {
     const url = new URL(request.url);
     const searchParams = url.searchParams;
     const author = searchParams.get('author') || '';
     const searchQuery = searchParams.get('search') || '';
+    const fuseOptions = {
+        keys: ['title', 'content'],
+        threshold: 0.3, // Adjust for more/less strict matching
+        ignoreLocation: true,
+        findAllMatches: true
+    };
 
-    // Filter posts by author or search query
-    const filteredPosts = posts.filter((post) => {
-        const matchesAuthor = author ? post.author === author : true;
-        const matchesSearch = searchQuery
-            ? post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-              post.content.toLowerCase().includes(searchQuery.toLowerCase())
-            : true;
+    let filteredPosts = posts;
 
-        return matchesAuthor && matchesSearch;
-    });
+    if (searchQuery) {
+        const fuse = new Fuse(posts, fuseOptions);
+        filteredPosts = fuse.search(searchQuery).map(result => result.item);
+    }
 
-    // Get unique authors for filter
-    const authors = [...new Set(posts.map((post) => post.author))];
+    if (author) {
+        filteredPosts = filteredPosts.filter(post => post.author === author);
+    }
+
+    const authors = [...new Set(posts.map(post => post.author))];
 
     return Response.json({ posts: filteredPosts, authors });
 };
@@ -53,7 +59,7 @@ export default function PostsPage() {
 
     return (
         <div className={styles.page}>
-            <h1>All Blog Posts</h1>
+            <h1>Quiz4Love Blog</h1>
 
             <div className={styles.filters}>
                 <input
@@ -124,3 +130,13 @@ export default function PostsPage() {
         </div>
     );
 }
+
+export const meta: MetaFunction = () => {
+    return [
+        { title: 'Blog | Quiz4Love' },
+        {
+            name: 'description',
+            content: 'Quiz4Love',
+        },
+    ];
+};
