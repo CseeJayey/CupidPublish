@@ -139,8 +139,8 @@ export default function AboutUsPage() {
                         </a>
                         <div className={styles.magnetLines}>
                             <MagnetLines
-                                rows={10}
-                                columns={10}
+                                rows={15}
+                                columns={15}
                                 containerSize="100%"
                                 lineColor="rgba(255, 99, 71, 0.2)"
                                 lineWidth="0.4vmin"
