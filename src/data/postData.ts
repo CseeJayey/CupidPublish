@@ -192,7 +192,7 @@ export const posts = [
         content: `
             <figure>
                 <img src="https://images2.thanhnien.vn/thumb_w/640/528068263637045248/2024/12/1/anh-17330625662531366832760.jpg" alt="Hệ lụy của việc ngại kết hôn và sinh con">
-                <figcaption>Già hóa dân số và mất cân bằng giới tính là những hệ lụy lớn.</figcaption>
+                <figcaption>Ảnh: Tổng Cục Thống Kê</figcaption>
             </figure>
 
             <blockquote>
@@ -212,7 +212,7 @@ export const posts = [
             <h2>2. Mất Cân Bằng Giới Tính</h2>
             <figure>
                 <img src="https://suckhoedoisong.qltns.mediacdn.vn/Images/duylinh/2020/08/10/Unt2itled_resize.jpg" alt="Mất cân bằng giới tính">
-                <figcaption>Mất cân bằng giới tính khi sinh đang trở thành vấn đề xã hội nghiêm trọng.</figcaption>
+                <figcaption>Ảnh minh họa.</figcaption>
             </figure>
             <p>
                 Tình trạng mất cân bằng giới tính khi sinh đang ở mức cao so với mức cân bằng tự nhiên, dẫn đến những vấn đề xã hội như:
@@ -235,7 +235,7 @@ export const posts = [
             <blockquote>
                 "Việt Nam đang đối mặt với tình trạng vô sinh ngày càng tăng, đặc biệt ở các cặp vợ chồng trẻ."
             </blockquote>
-            <h1>Giải Pháp</h2>
+            <h1>Giải Pháp Đề Xuất</h2>
             <figure>
                 <img src="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/TD/thang-9/dan-so-1.png" alt="Giải pháp cho việc ngại kết hôn và sinh con">
                 <figcaption>Cần nhiều chính sách hỗ trợ và thay đổi nhận thức. Ảnh minh họa.</figcaption>
@@ -385,30 +385,94 @@ export const posts = [
             <p>Kết hôn muộn đang ngày càng phổ biến ở Việt Nam. Giới trẻ ngại kết hôn hoặc không muốn kết hôn giờ đã không còn là hiện tượng cá biệt, mà đang dần trở thành xu hướng, trở thành vấn đề đáng lo ngại của xã hội. Trong những năm gần đây, tỉ lệ kết hôn và sinh con ở giới trẻ đang giảm mạnh trên toàn thế giới, đặc biệt là ở các nước phát triển như Nhật Bản, Hàn Quốc, và cả Việt Nam.</p>
             <figure>
                 <img src="https://cdn.tuoitre.vn/471584752817336320/2024/3/19/photo1710824123691-17108241241421733479340.png" alt="ngai ket hon" />
+                <figcaption>Ảnh minh họa.</figcaption>
             </figure>
 
+            <h2>1. Số liệu thống kê đáng chú ý</h2>
             <span>
-                Theo Niên giám thống kê của Tổng cục Thống kê, TP. Hồ Chí Minh không chỉ nằm trong nhóm 21 tỉnh, thành phố có tỉ lệ sinh thấp nhất mà còn là địa phương có độ tuổi kết hôn trung bình lần đầu là 29,8 tuổi, cao hơn gần 3 tuổi so với số liệu chung của Việt Nam (26,9 tuổi).
-                Số liệu này cũng cho thấy, người trẻ ngày càng không mặn mà với hôn nhân. Cụ thể: năm 1989, độ tuổi kết hôn trung bình của nam giới từ 24,4 và nữ là 23,2 đã tăng lên 29 tuổi với nam và 24,1 đối với nữ vào năm 2022. Tỷ lệ kết hôn cũng giảm, năm 1989, tỷ lệ người trong độ tuổi 20-24 đã kết hôn là 37,6% (nam), 57,5% (nữ) thì đến năm 2019 chỉ còn 19,6% và 44,3%.
-                Thủ tướng Chính phủ đã có Quyết định số 588/QĐ-TTg phê duyệt "Chương trình điều chỉnh mức sinh phù hợp các vùng, đối tượng đến năm 2030". Theo đó, các địa phương cần phát triển các câu lạc bộ kết bạn trăm năm, hỗ trợ nam, nữ thanh niên kết bạn; tư vấn sức khỏe trước khi kết hôn; khuyến khích nam, nữ kết hôn trước 30 tuổi, sớm sinh con, không kết hôn muộn, phụ nữ sinh con thứ hai trước 35 tuổi... Ngoài ra, chính quyền các địa phương cũng cần nghiên cứu, ban hành các biện pháp hỗ trợ các cặp vợ chồng sinh đủ 2 con. Các đoàn thể tham gia hỗ trợ tư vấn, cung cấp dịch vụ hôn nhân và gia đình…
+                <ul>
+                    <li>TP. Hồ Chí Minh thuộc nhóm 21 tỉnh, thành phố có tỉ lệ sinh thấp nhất và có độ tuổi kết hôn trung bình lần đầu là 29,8 tuổi – cao hơn gần 3 tuổi so với mức trung bình của cả nước (26,9 tuổi).</li>
+                    <li>
+                        <strong>So sánh qua các năm:</strong>
+                    </li>
+                        <ul>
+                            <li><strong>Năm 1989:</strong> Độ tuổi kết hôn trung bình của nam là 24,4 tuổi, nữ là 23,2 tuổi.</li>
+                            <li><strong>Năm 2022:</strong> Con số này đã tăng lên 29 tuổi đối với nam và 24,1 tuổi đối với nữ.</li>
+                        </ul>
+                    <li>
+                        <strong>Tỷ lệ kết hôn giảm:</strong>
+                    </li>
+                    <ul>
+                        <li><strong>Năm 1989:</strong></li>
+                        <ul>
+                            <li><strong>Nam (20-24 tuổi)</strong>: 37,6% đã kết hôn.</li>
+                            <li><strong>Nữ (20-24 tuổi)</strong>: 57,5% đã kết hôn.</li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li><strong>Năm 2022:</strong></li>
+                        <ul>
+                            <li><strong>Nam</strong>: giảm xuống còn 19,6%.</li>
+                            <li><strong>Nữ</strong>: giảm xuống còn 44,3%.</li>
+                        </ul>
+                    </ul>
+                </ul>
             </span>
-            <p>Người trẻ vẫn thường nói vui rằng: "Ế là một xu thế". Song, trên thực tế, đây là thực trạng xã hội không thể thờ ơ. Nhìn ở góc độ tích cực, theo PGS.TS Nguyễn Thị Thúy Hạnh, điều này cũng phần nào đó khẳng định phụ nữ bây giờ rất giỏi giang, có vị thế trong gia đình và xã hội, nữ quyền được nâng cao. Bên cạnh đó, từ khi sinh ra, con cái (cả nam và nữ) đều được bố mẹ nuôi dưỡng và đầu tư cho giáo dục nhiều, công phu, tốn kém… Khi trưởng thành, giới trẻ tập trung đầu tư cho sự nghiệp, chăm sóc bản thân, chất lượng cuộc sống ngày càng được nâng cao và họ cảm thấy hạnh phúc, vui vẻ trong chính gia đình ruột thịt của mình, nhu cầu kết hôn vì thế cũng không còn nhiều thôi thúc. Cùng với đó là nỗi lo mất tự do trong hôn nhân và không muốn sống chung với gia đình chồng/vợ cũng những trách nhiệm sẽ phải gánh vác khi lập gia đình...</p>
-            <p>Tuy nhiên, cũng theo PGS.TS Nguyễn Thị Thúy Hạnh, xét dưới góc nhìn y học thì việc kết hôn muộn, sinh ít con, thậm chí không kết hôn và sinh con sẽ dẫn đến nhiều hệ lụy: chất lượng dân số có thể giảm do con dễ bị dị tật, phụ nữ khó thụ thai hơn độ tuổi 20-29, tình trạng dân số già...</p>
-            <p>"Còn dưới góc độ xã hội thì điều này sẽ tác động trực tiếp tới cấu trúc gia đình, văn hóa gia đình truyền thống bị phá vỡ, xung đột thế hệ, mâu thuẫn gia đình do con cái không muốn kết hôn và sinh con, gây tổn thương về tinh thần cho nhiều bậc cha mẹ; thiếu hụt nguồn lao động và không đáp ứng chất lượng lao động, thiếu thế hệ nối tiếp...". PGS.TS Nguyễn Thị Thúy Hạnh phân tích.</p>
-            <p>Kết hôn sớm hay muộn không còn là câu chuyện của cá nhân nữa mà xét về vĩ mô, điều này gây ra nhiều hệ lụy cho đời sống xã hội nói chung. Có lẽ chúng ta sẽ phải cần nhiều hơn nữa những khảo sát đặc thù để đi tìm lời giải cho nguyên nhân của vấn đề, từ đó đưa ra những điều chỉnh giải pháp phù hợp, có cơ sở khoa học.</p>
-            <p>Người trẻ sẽ sẵn sàng kết hôn và sinh con khi họ thực sự cảm thấy đã đủ vững vàng để đối mặt với hôn nhân. Và đó mới chính là điều quan trọng, là đích đến của một cuộc hôn nhân hạnh phúc và bền vững. </p>
-
+                    
+                <h2>2. Giải pháp từ Chính phủ</h2>
+                <p>Thủ tướng Chính phủ đã ban hành <strong>Quyết định số 588/QĐ-TTg</strong> phê duyệt "Chương trình điều chỉnh mức sinh phù hợp các vùng, đối tượng đến năm 2030". Nội dung bao gồm:</p>
+                <ul>
+                    <li>
+                        Phát triển câu lạc bộ kết bạn trăm năm, hỗ trợ thanh niên tìm hiểu và kết hôn.
+                    </li>
+                    <li>
+                        Tư vấn sức khỏe tiền hôn nhân, nâng cao nhận thức về sinh sản.
+                    </li>
+                    <li>
+                        Khuyến khích kết hôn trước 30 tuổi, phụ nữ sinh con thứ hai trước 35 tuổi.
+                    </li>
+                    <li>
+                        Chính quyền nghiên cứu biện pháp hỗ trợ các cặp vợ chồng sinh đủ 2 con.
+                    </li>
+                    <li>
+                        Tổ chức các dịch vụ tư vấn hôn nhân, gia đình.
+                    </li>
+                </ul>
+                <h2>3. Nguyên nhân khiến giới trẻ ngại kết hôn</h2>
+                <p>Nhiều người trẻ hiện nay quan niệm rằng:</p>
+                <blockquote>
+                    &ensp;"Ế là một xu thế" – một câu nói vui nhưng phản ánh đúng thực trạng xã hội
+                </blockquote>
+                <p>Theo <strong>PGS.TS Nguyễn Thị Thúy Hạnh</strong>, nguyên nhân chính là:</p>
+                <ul>
+                    <li>
+                        Phụ nữ hiện đại <strong>có vị thế cao hơn trong xã hội</strong>, tự chủ kinh tế và không còn phụ thuộc vào hôn nhân.
+                    </li>
+                    <li>
+                        Giáo dục ngày càng <strong>được đầu tư nhiều</strong>, khiến giới trẻ tập trung vào sự nghiệp.
+                    </li>
+                    <li>
+                        <strong>Áp lực tài chính</strong>, giá nhà đất đắt đỏ, chi phí nuôi con cao.
+                    </li>
+                    <li>
+                        Lo <strong>mất tự do trong hôn nhân</strong>, ngại sống chung với gia đình chồng/vợ.
+                    </li>
+                    <li>
+                        <strong>Trách nhiệm</strong> sau khi lập gia đình khiến nhiều người lo lắng.
+                    </li>
+                </ul>
+            
             <blockquote>
               Nguồn:
                <ul>
                 <li>
                     <a href="https://vietnamnet.vn/nhieu-nguoi-viet-thich-thu-huong-cuoc-song-nen-ket-hon-muon-khong-muon-sinh-con-2318207.html" target="_blank" rel="noopener noreferrer">
-                        https://vietnamnet.vn/nhieu-nguoi-viet-thich-thu-huong-cuoc-song-nen-ket-hon-muon-khong-muon-sinh-con-2318207.html
+                        VietNamNet
                     </a>
                 </li>
                 <li>
                     <a href="https://vov.vn/doi-song/vi-sao-nguoi-tre-ngai-ket-hon-hoac-khong-muon-ket-hon-post1081082.vov" target="_blank" rel="noopener noreferrer">
-                        https://vov.vn/doi-song/vi-sao-nguoi-tre-ngai-ket-hon-hoac-khong-muon-ket-hon-post1081082.vov
+                        Vov
                     </a>
                 </li>
                </ul>

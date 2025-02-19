@@ -7,22 +7,38 @@ import MetaBalls from '~/src/components/metaballs/MetaBalls';
 import { FeaturedPostsSection } from '~/src/components/featured-posts-section/featured-posts-section';
 import { CONFIG } from '~/src/data/configData';
 import { FiExternalLink } from 'react-icons/fi';
+import { useEffect, useState } from 'react';
 
 export default function HomePage() {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+      const checkScreenSize = () => {
+        setIsMobile(window.innerWidth <= 768); // Adjust breakpoint as needed
+      };
+  
+      checkScreenSize();
+      window.addEventListener("resize", checkScreenSize);
+  
+      return () => window.removeEventListener("resize", checkScreenSize);
+    }, []);
+
     return (
         <div className={styles.outletWrapper}>
             <div className={styles.metaBallsWrapper}>
-                <MetaBalls
-                    color="#ffffff"
-                    cursorBallColor="#ffffff"
-                    cursorBallSize={5}
-                    enableMouseInteraction={false}
-                    ballCount={5}
-                    animationSize={20}
-                    hoverSmoothness={0.05}
-                    clumpFactor={1}
-                    speed={0.6}
-                />
+                {!isMobile && (
+                    <MetaBalls
+                        color="#ffffff"
+                        cursorBallColor="#ffffff"
+                        cursorBallSize={5}
+                        enableMouseInteraction={false}
+                        ballCount={5}
+                        animationSize={20}
+                        hoverSmoothness={0.05}
+                        clumpFactor={1}
+                        speed={0.6}
+                    />
+                )}
             </div>
             <div className={classNames('heroBanner', styles.heroBanner)}>
                 <img src="/images/hero3.jpg" className="heroBannerImage" alt="" />

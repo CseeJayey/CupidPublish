@@ -10,7 +10,6 @@
 .question-card {
     margin-bottom: 20px;
     font-size: xx-large;
-    
 }
 
 .question-counter {
@@ -180,6 +179,7 @@
 
     .answer-button {
         padding: 10px;
+        font-size: 0.8em;
     }
 
     .answer-grid {
@@ -208,7 +208,7 @@
 }
 
 /* If the screen is very narrow, fallback to 1x4 again */
-@media (max-width: 400px) {
+@media (max-width: 800px) {
     .answer-grid {
         grid-template-columns: 1fr;
     }
