@@ -27,6 +27,7 @@
     position: relative;
     z-index: 1; /* In front of the background */
 }
+
 @media (max-width: 800px) {
     .quizHeader {
         font-size: x-large;

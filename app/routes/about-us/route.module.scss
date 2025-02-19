@@ -35,10 +35,10 @@
 }
 
 .image {
-    width: 100%; /* Make image fill its container */
-    height: 100%; /* Maintain the height */
-    object-fit: cover; /* Ensure the image covers the area */
-    object-position: center; /* Center the image */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
     display: block;
 }
 
@@ -49,7 +49,7 @@
         grid-template-columns: 1fr;
     }
     .image {
-        height: auto; /* Adjust image height */
+        height: auto;
     }
     .subtitle {
         font: var(--heading3);
@@ -148,8 +148,8 @@
     padding: 24px;
     border-radius: 12px;
     background: var(--primary3);
-    overflow: hidden; /* Prevents content overflow */
-    width: fit-content; /* Adjust this as needed to fit your layout */
+    overflow: hidden;
+    width: fit-content;
     height: 100%;
     width: 100%;
     border: 2px solid #0000004d;
@@ -211,10 +211,10 @@
 .technologiesContainer{
     text-align: center;
     padding-bottom: 2em;
-    position: relative; /* Ensures child absolute positioning works */
+    position: relative;
     width: 100%;
     height: 100%;
-    overflow: hidden; /* Prevents overflow issues */  
+    overflow: hidden;
     background: var(--primary3);
     background: linear-gradient(0, var(--primary3) 0%, var(--page-background-color) 20%);
 }

@@ -10,14 +10,6 @@ export default function QuizPage() {
     const containerRef = useRef(null);
     return (
         <div className={styles.quizPage}>
-            {/* <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
-                <MouseParallaxChild factorX={0.3} factorY={0.5}>
-                    <img src="/images/hero2.jpg" alt="" />
-                </MouseParallaxChild>
-                <MouseParallaxChild factorX={0.7} factorY={0.8}>
-                    <img src="/images/hero2.jpg" alt="" />
-                </MouseParallaxChild>
-            </MouseParallaxContainer> */}
             <div className={styles.quizComponent}>
                 <div ref={containerRef} className={styles.quizHeader}>
                     <VariableProximity

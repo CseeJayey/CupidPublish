@@ -66,7 +66,6 @@ const QuizComponent: React.FC = () => {
                             transition={{ duration: 0.2 }}
                             className="question-card"
                         >
-                            {/* Question Counter */}
                             <p className="question-counter">
                                 Câu hỏi {currentQuestion + 1} trên {quizData.length}
                             </p>

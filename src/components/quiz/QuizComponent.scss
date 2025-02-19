@@ -204,7 +204,7 @@
     width: 100vw;
     height: 100vh;
     z-index: 9999;
-    pointer-events: none; /* Optional: Prevents it from blocking clicks */
+    pointer-events: none; /* Prevents it from blocking clicks */
 }
 
 /* If the screen is very narrow, fallback to 1x4 again */

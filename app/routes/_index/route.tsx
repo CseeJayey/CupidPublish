@@ -14,7 +14,7 @@ export default function HomePage() {
 
     useEffect(() => {
       const checkScreenSize = () => {
-        setIsMobile(window.innerWidth <= 768); // Adjust breakpoint as needed
+        setIsMobile(window.innerWidth <= 768);
       };
   
       checkScreenSize();
@@ -61,14 +61,6 @@ export default function HomePage() {
             </div>
 
             <div className="cardsSection">
-                {/* <CategoryLink categorySlug="kitchen-essentials" className="linkCard">
-                    <img
-                        className="linkCardBackground"
-                        src="./images/banner1.jpg"
-                        alt=""
-                    />
-                    <div className="linkCardTitle">Lorem</div>
-                </CategoryLink> */}
                 <NavLink to="/post/why" className="linkCard">
                     <img className="linkCardBackground" src="/images/banner1.jpg" alt="" />
                     <div className="linkCardTitle">Vì sao ngại kết hôn?</div>
@@ -126,13 +118,6 @@ export default function HomePage() {
                     </div>
                 </FloatIn>
             </BackgroundParallax>
-            {/* 
-            <FeaturedProductsSection
-                categorySlug="best-sellers"
-                title="Best Sellers"
-                description="When quality is eco-friendly. Explore our top picks."
-                productCount={4}
-            /> */}
         </div>
     );
 }
