@@ -120,7 +120,7 @@ export default function HomePage() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <span>Chia sẻ ý kiến của bạn tại đây. </span> <FiExternalLink />
+                                <span>Chia sẻ ý kiến của bạn tại đây</span> <FiExternalLink />
                             </a>
                         </div>
                     </div>

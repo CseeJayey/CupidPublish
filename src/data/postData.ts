@@ -5,13 +5,13 @@ export const posts = [
         title: '7 Vấn Đề Khó Khăn Trong Mối Quan Hệ Tình Cảm và Cách Vượt Qua',
         author: 'BanhNgot',
         publishedDate: '2025-02-13T10:30:00Z',
-        previewImage: 'https://media.istockphoto.com/id/1215736587/photo/young-couple-staying-home.jpg?s=612x612&w=0&k=20&c=PR1jL78Xi7Chp65Zw9ihOVwpj5dab-HD9LwvATqOSas=',
+        previewImage: 'https://www.couplestherapyinc.com/wp-content/uploads/2016/02/Common-relationship-problems-that-lead-to-unhappy-marriages.png',
         tags: [],
         content: `
-        <h1>7 Vấn Đề Khó Khăn Trong Mối Quan Hệ Tình Cảm và Cách Vượt Qua</h1>
+        <p>Yêu một ai đó là phần thú vị, còn giữ được tình yêu đó là phần khó. Để duy trì được mối quan hệ đòi hỏi rất nhiều nỗ lực từ cả hai phía. Hầu hết các cặp đôi sẽ trải qua một số khó khăn ở giai đoạn đã yêu nhau được một thời gian, như rắc rối trong giao tiếp đến việc gặp khó khăn khi gặp mặt trực tiếp.</p>
         <figure>
             <img src='https://media.istockphoto.com/id/1215736587/photo/young-couple-staying-home.jpg?s=612x612&w=0&k=20&c=PR1jL78Xi7Chp65Zw9ihOVwpj5dab-HD9LwvATqOSas=' alt='Mối Quan Hệ Tình Cảm'>
-            <figcaption>Vượt qua khó khăn trong mối quan hệ để hạnh phúc bền lâu</figcaption>
+            <figcaption>Ảnh minh họa.</figcaption>
         </figure>
 
         <h2>1. Giao Tiếp Kém</h2>
@@ -93,7 +93,7 @@ export const posts = [
         title: 'Sự Khác Biệt Giữa Tình Yêu và Hôn Nhân',
         author: 'BanhNgot',
         publishedDate: '2025-02-13T12:30:00Z',
-        previewImage: 'https://i1-giadinh.vnecdn.net/2022/02/10/tinh-yeu-1-5003-1644469977.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=sP2F6BRVfmAWHOH819rUNw',
+        previewImage: 'https://wallpapers.com/images/hd/love-couple-pictures-52cmcclssuh3d4gi.jpg',
         tags: [],
         content: `
             <p>Nhiều người từng đặt câu hỏi này, nhưng không phải ai cũng có câu trả lời chính xác cho riêng mình.</p>
@@ -151,15 +151,17 @@ export const posts = [
         author: 'BanhNgot',
         publishedDate: '2025-02-13T13:30:00Z',
         previewImage:
-            'https://images2.thanhnien.vn/Uploaded/ttt/images/Content/ky-nang-song/cong-dan-thong-thai/2016_04_w4/EQ/iStock_000016980198Medium.jpg',
+            'https://fpa-trends.com/sites/default/files/imgorg/2022/2022-4kv/2004/Amarendra%20Kumar-Emotional-Intelligence-Main.jpg',
         tags: [],
         content: `
             <p>Khi nói đến trí thông minh, mọi người thường liên tưởng đến chỉ số thông minh (IQ), tuy nhiên còn một dạng thông minh khác cũng không kém phần quan trọng mà chúng ta thường bỏ qua, đó là chỉ số trí tuệ cảm xúc (EQ).</p>
-            <p>EQ là một phần quan trọng trong việc xây dựng mối quan hệ cá nhân hay chuyên nghiệp. Trí tuệ cảm xúc là khả năng hiểu và quản lý cảm xúc bản thân và của người khác. Nó rất quan trọng nhằm điều hướng các mối quan hệ với sếp, đồng nghiệp, bạn bè, gia đình và những người quan trọng khác.
-            Theo tiến sĩ Sanam Hafeez, giảng viên tại Đại học Columbia, trí tuệ cảm xúc có 3 thành phần chính, đó là sự tự nhận thức, động lực để xem xét một vấn đề và tìm ra giải pháp hợp lý, và khả năng phát triển các kỹ năng xã hội. May mắn thay, bạn có thể liên tục làm việc dựa trên 3 thành phần này để tăng cường trí thông minh cảm xúc, phát triển sự tự nhận thức mạnh mẽ hơn, đồng thời đáp ứng những cảm xúc của người khác và của chính bạn.</p>
             <figure>
                 <img src="https://images2.thanhnien.vn/Uploaded/ttt/images/Content/ky-nang-song/cong-dan-thong-thai/2016_04_w4/EQ/iStock_000016980198Medium.jpg" alt="Help yourself by helping others" />
                 <figcaption class="imageCaption">“Help yourself by helping others”</figcaption>
+            </figure>
+            <p>EQ là một phần quan trọng trong việc xây dựng mối quan hệ cá nhân hay chuyên nghiệp. Trí tuệ cảm xúc là khả năng hiểu và quản lý cảm xúc bản thân và của người khác. Nó rất quan trọng nhằm điều hướng các mối quan hệ với sếp, đồng nghiệp, bạn bè, gia đình và những người quan trọng khác. Theo tiến sĩ Sanam Hafeez, giảng viên tại Đại học Columbia, trí tuệ cảm xúc có 3 thành phần chính, đó là sự tự nhận thức, động lực để xem xét một vấn đề và tìm ra giải pháp hợp lý, và khả năng phát triển các kỹ năng xã hội. May mắn thay, bạn có thể liên tục làm việc dựa trên 3 thành phần này để tăng cường trí thông minh cảm xúc, phát triển sự tự nhận thức mạnh mẽ hơn, đồng thời đáp ứng những cảm xúc của người khác và của chính bạn.</p>
+            <figure>
+                <img src="https://www.simplypsychology.org/wp-content/uploads/Emotional-Intelligence.jpg" alt="Emotional Intelligence" />
             </figure>
             <p>Dưới đây là những lời khuyên từ chuyên gia để giúp bạn tăng cường trí thông minh cảm xúc của bạn.</p>
             <h2>1. Tương tác thường xuyên</h2>
@@ -342,6 +344,7 @@ export const posts = [
                 <p>"Gia đình nhiều lần thúc giục có con nhưng lương không đủ sống, làm sao lo nổi cho con" - chị Ngân thở dài.</p>
             </blockquote>
             <blockquote>
+                Nguồn:
                 <ul>
                     <li>
                         <a href="https://vietnamnet.vn/nhieu-nguoi-viet-thich-thu-huong-cuoc-song-nen-ket-hon-muon-khong-muon-sinh-con-2318207.html" rel="noopener noreferrer" target="_blank">

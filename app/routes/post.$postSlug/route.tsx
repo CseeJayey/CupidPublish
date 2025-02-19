@@ -8,6 +8,7 @@ import type { GetStaticRoutes } from '@wixc3/define-remix-app';
 import classNames from 'classnames';
 import DOMPurify from "isomorphic-dompurify";
 import { useEffect } from 'react';
+import { BackgroundParallax } from '~/src/components/visual-effects';
 
 export const loader = async ({ params }: LoaderFunctionArgs) => {
     if (!params.postSlug) throw new Response('Bad Request', { status: 400 });
@@ -85,6 +86,11 @@ export default function PostSlug() {
     }, []);
     return (
         <div className={styles.page}>
+            <BackgroundParallax
+                className={classNames("floatingCardBackground", styles.paralaxBanner)}
+                backgroundImageUrl={post.previewImage}
+                parallaxStrength={0.75}
+            ></BackgroundParallax>
             <div className={styles.postContainer}>
                 <Breadcrumbs breadcrumbs={breadcrumbs} />
 
@@ -97,7 +103,7 @@ export default function PostSlug() {
                     </div>
                     <div className={styles.contentBody}>
                         <article
-                            className={classNames(styles.content, "postContent")}
+                            className={classNames(styles.content, 'postContent')}
                             dangerouslySetInnerHTML={sanitizedData()}
                         />
                     </div>

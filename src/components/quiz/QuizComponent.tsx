@@ -11,12 +11,9 @@ const QuizComponent: React.FC = () => {
     const [currentQuestion, setCurrentQuestion] = useState<number>(0);
     const [score, setScore] = useState<number>(0);
     const [showResult, setShowResult] = useState<boolean>(false);
-    // const navigate = useNavigate();
     const handleAnswer = (points: number) => {
-        // Calculate the new score first
         const newScore = score + points;
 
-        // Update the state with the new score
         setScore(newScore);
 
         const nextQuestion = currentQuestion + 1;
@@ -25,18 +22,6 @@ const QuizComponent: React.FC = () => {
         } else {
             setCurrentQuestion(nextQuestion);
             setShowResult(true);
-
-            // Log the final score for debugging
-            // console.log('Final Score:', newScore);
-
-            // // Use the calculated newScore to navigate
-            // if (newScore >= 25) {
-            //     navigate('/ready-for-parenthood');
-            // } else if (newScore >= 15) {
-            //     navigate('/almost-there');
-            // } else {
-            //     navigate('/reconsider');
-            // }
         }
     };
 

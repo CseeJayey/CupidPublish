@@ -26,8 +26,11 @@ export default function QuizPage() {
                         toFontVariationSettings="'wght' 1200, 'opsz' 40"
                         containerRef={containerRef}
                         radius={100}
-                        falloff="linear"
+                        falloff="gaussian"
                     />
+                    <h6>
+                        *This test is only as truthful as you are.
+                    </h6>
                 </div>
                 <QuizComponent />
             </div>
