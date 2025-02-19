@@ -1,6 +1,7 @@
 .root {
     padding: 0 var(--pagePaddingHoriz);
     background-color: var(--primary3);
+    z-index: 10;
 }
 
 .topBar {

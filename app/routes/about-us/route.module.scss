@@ -204,7 +204,10 @@
 .technologiesContainer{
     text-align: center;
     padding-bottom: 2em;
-    
+    position: relative; /* Ensures child absolute positioning works */
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevents overflow issues */  
     background: var(--primary3);
     background: linear-gradient(0, var(--primary3) 0%, var(--page-background-color) 20%);
 }
@@ -221,9 +224,11 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 0.5em
 }
-
+.technologiesContent{
+    position: relative;
+    z-index: 2;
+}
 .technologiesLogos img{
     max-width: 10em;
     
@@ -232,4 +237,12 @@
 
 .technologiesLogos img:hover{
     transform: scale(1.1);
+}
+
+.magnetLines {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }

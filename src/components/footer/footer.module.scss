@@ -1,6 +1,7 @@
 .root {
     padding: 30px var(--pagePaddingHoriz);
     background: var(--primary3);
+    z-index: 10;
 }
 
 .navigation {

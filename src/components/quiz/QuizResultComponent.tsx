@@ -58,11 +58,10 @@ const ResultComponent: React.FC<ResultComponentProps> = ({ score, maxScore, rese
             {percentage >= CONFIG.RESULT_HIGH && (
                 <div>
                     {getConfetti(width, height, heartsShape)}
-                    <p className="resultTitle">Bạn đã sẵn sàng để làm cha mẹ!</p>
+                    <p className="resultTitle">Bạn đã sẵn sàng bước vào hôn nhân!</p>
                     <p className="resultFlair">
-                        Chúc mừng! Bạn đã có kiến thức và tâm lý vững vàng để chào đón thành viên
-                        mới trong gia đình. Hãy tiếp tục duy trì tinh thần này và sẵn sàng đối mặt
-                        với mọi thử thách của việc nuôi dạy con cái!
+                        Chúc mừng! Bạn đã có sự chuẩn bị tốt về mặt tâm lý, tài chính và hiểu biết để xây dựng một cuộc sống hôn nhân hạnh phúc. 
+                        Hãy tiếp tục duy trì tình yêu và sự thấu hiểu với đối phương nhé!
                     </p>
                 </div>
             )}
@@ -71,23 +70,21 @@ const ResultComponent: React.FC<ResultComponentProps> = ({ score, maxScore, rese
                 <div>
                     {getConfetti(width, height)}
                     <p className="resultTitle">
-                        Bạn gần đạt được mục tiêu, chỉ cần chuẩn bị thêm một chút nữa!
+                        Bạn đã sẵn sàng, chỉ cần chuẩn bị thêm một chút nữa!
                     </p>
                     <p className="resultFlair">
-                        Bạn đã có những hiểu biết cơ bản nhưng vẫn cần thêm một chút chuẩn bị về tài
-                        chính, tinh thần hoặc kiến thức nuôi dạy con. Hãy tiếp tục tìm hiểu và học
-                        hỏi thêm để tự tin hơn trong vai trò làm cha mẹ nhé!
+                        Bạn có sự hiểu biết và cảm xúc tích cực về hôn nhân, nhưng có thể vẫn cần thêm chút thời gian để chuẩn bị kỹ hơn về tài chính, 
+                        trách nhiệm hoặc sự hòa hợp với đối phương. Hãy tiếp tục tìm hiểu và củng cố mối quan hệ nhé!
                     </p>
                 </div>
             )}
 
             {percentage < CONFIG.RESULT_LOW && (
                 <div>
-                    <p className="resultTitle">Có thể bạn cần suy nghĩ thêm về quyết định này.</p>
+                    <p className="resultTitle">Có thể bạn cần suy nghĩ thêm về quyết định này...</p>
                     <p className="resultFlair">
-                        Việc làm cha mẹ đòi hỏi rất nhiều trách nhiệm và sự chuẩn bị kỹ lưỡng. Hãy
-                        dành thêm thời gian để suy nghĩ về mong muốn và khả năng của bản thân, cũng
-                        như thảo luận với người thân để có quyết định đúng đắn nhất.
+                        Hôn nhân là một bước ngoặt quan trọng trong cuộc đời, đòi hỏi sự sẵn sàng về nhiều mặt. 
+                        Hãy dành thời gian để cân nhắc kỹ lưỡng, trao đổi với người yêu và gia đình để có quyết định đúng đắn nhất cho bản thân.
                     </p>
                 </div>
             )}

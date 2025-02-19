@@ -1,6 +1,7 @@
 import { type MetaFunction } from '@remix-run/react';
 import { FadeIn, Reveal } from '~/src/components/visual-effects';
 import styles from './route.module.scss';
+import MagnetLines from '~/src/components/magnet-lines/MagnetLines';
 
 export default function AboutUsPage() {
     return (
@@ -127,14 +128,27 @@ export default function AboutUsPage() {
             <div className={styles.pagebreak} />
 
             <div className={styles.technologiesContainer}>
-                <h1>Built With:</h1>
-                <div className={styles.technologiesLogos}>
-                    <a href="https://remix.run/" target="_blank" rel="noopener noreferrer">
-                        <img src="/logos/remix.svg" alt="" />
-                    </a>
-                    <a href="https://vite.dev/" target="_blank" rel="noopener noreferrer">
-                        <img src="/logos/vite.svg" alt="" />
-                    </a>
+                <div className={styles.technologiesContent}>
+                    <h1>Built With:</h1>
+                    <div className={styles.technologiesLogos}>
+                        <a href="https://remix.run/" target="_blank" rel="noopener noreferrer">
+                            <img src="/logos/remix.svg" alt="" />
+                        </a>
+                        <a href="https://vite.dev/" target="_blank" rel="noopener noreferrer">
+                            <img src="/logos/vite.svg" alt="" />
+                        </a>
+                        <div className={styles.magnetLines}>
+                            <MagnetLines
+                                rows={10}
+                                columns={10}
+                                containerSize="100%"
+                                lineColor="rgba(255, 99, 71, 0.2)"
+                                lineWidth="0.4vmin"
+                                lineHeight="5vmin"
+                                baseAngle={0}
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
 
