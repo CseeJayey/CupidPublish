@@ -1,10 +1,10 @@
 import classNames from 'classnames';
-import { useNavigation } from '@remix-run/react';
+import { useLocation } from '@remix-run/react';
 import { Drawer } from '../drawer/drawer';
 import { CrossIcon } from '../icons';
 import { NavigationMenu } from '../navigation-menu/navigation-menu';
 import styles from './sidebar-navigation-menu.module.scss';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 interface SidebarNavigationMenuProps {
     open: boolean;
@@ -12,14 +12,15 @@ interface SidebarNavigationMenuProps {
 }
 
 export const SidebarNavigationMenu = ({ open, onClose }: SidebarNavigationMenuProps) => {
-    const navigation = useNavigation();
+    const location = useLocation();
+    const previousPathname = useRef(location.pathname);
 
     useEffect(() => {
-        // Close the sidebar when a user navigates to another page.
-        if (navigation.state === 'loading') {
+        if (previousPathname.current !== location.pathname) {
             onClose();
+            previousPathname.current = location.pathname;
         }
-    }, [navigation.state, onClose]);
+    }, [location.pathname, onClose]);
 
     return (
         <Drawer open={open} onClose={onClose} drawerClassName={styles.drawer}>
